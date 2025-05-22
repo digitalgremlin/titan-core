@@ -1,0 +1,124 @@
+<context>
+# Overview
+
+Garden Gate Publishing is launching its first beginner gardening book, "Quickstart Guide to Raised Bed & Container Gardening for Beginners." To support the soft launch, a focused web presence is needed, comprising a single-page website and a dedicated book landing page. These digital properties primarily convert book readers into newsletter subscribers by offering access to exclusive bonus content ("Beginner Gardener's Toolkit") and providing continued engagement through a monthly newsletter.
+
+# Core Features
+
+* **Single-Page Promotional Website:**
+
+  * Provides visitors with a compelling overview of the book, author credibility, testimonials, and future content teasers.
+  * Encourages newsletter sign-up through clearly defined calls-to-action and immediate access to valuable gardening resources.
+  * Utilizes responsive and performance-optimized Astro JS components for seamless user experience.
+
+* **Dedicated Book Landing Page:**
+
+  * Focuses exclusively on converting readers through an email signup to access bonus content.
+  * Clearly outlines toolkit contents and author expertise to reinforce trust and maximize conversions.
+  * Integration with an email marketing provider for immediate content delivery upon signup.
+
+* **CMS Integration (Prismic recommended):**
+
+  * Centralized management of content to streamline updates and scalability.
+  * Flexible content schema supporting book details, newsletter descriptions, toolkit content, testimonials, and future blog posts.
+
+# User Experience
+
+## User Personas:
+
+* **Beginner Gardener:** Enthusiastic but inexperienced, seeking clear, accessible guidance and immediate actionable resources.
+
+## Key User Flows:
+
+* Visitor arrives at the site via the book or social media → Engages with compelling content → Signs up via email → Immediately receives toolkit → Continues engagement through monthly newsletters.
+
+## UI/UX Considerations:
+
+* Clear, friendly, beginner-oriented messaging.
+* Simple, intuitive navigation, optimized for desktop and mobile responsiveness.
+* Minimal friction in email signup forms (limited fields, clear privacy assurances).
+</context>
+<PRD>
+# Technical Architecture
+
+## System Components:
+
+* **Front-End Framework:** Astro JS
+* **Content Management System:** Headless CMS (Prismic)
+* **Email Marketing Integration:** Mailerlite
+* **Hosting Infrastructure:** Netlify or Vercel for static hosting
+
+## Data Models:
+
+* **CMS Content Types:** Homepage, Landing Page, Toolkit resources, Blog Posts, Testimonials, Author bio
+
+## APIs and Integrations:
+
+* **Prismic REST/GraphQL APIs:** Content retrieval at build time
+* **Email Marketing API:** User email submissions and automation triggers
+
+## Infrastructure Requirements:
+
+* Hosting static site via CDN for optimal performance
+* Automated build/deployment pipeline triggered by CMS content updates
+
+# Development Roadmap
+
+## MVP Requirements:
+
+* Astro JS project setup with essential components (Hero, Intro, Author Bio, Testimonials, Toolkit Sign-up, Footer)
+* CMS setup (Prismic) with basic content schemas
+* Landing page setup with clear CTA and signup integration
+* Email delivery integration and automated toolkit distribution
+* Basic responsive design implementation
+
+## Future Enhancements:
+
+* Full blog integration with categorization and dynamic content
+* Additional books/pages dynamically generated from CMS
+* Enhanced analytics integration
+* Expanded automated newsletter sequences and drip campaigns
+
+# Logical Dependency Chain
+
+1. Project setup: Astro JS, Git, and CMS integration.
+2. Define and implement CMS content schemas.
+3. Develop foundational UI components (Hero, Footer).
+4. Integrate CMS content into front-end.
+5. Develop and integrate email signup form functionality.
+6. Build automated email delivery workflows.
+7. Test end-to-end user flows for signup and content delivery.
+8. Deploy MVP to production.
+9. Iteratively add enhancements (e.g., blog functionality, additional content types).
+
+# Risks and Mitigations
+
+* **Technical Integration Complexity:**
+
+  * Risk: Difficulty integrating Astro JS with CMS and email platforms.
+  * Mitigation: Early prototyping of API connections, leveraging documented integration guides and existing Astro plugins.
+
+* **Scope Creep:**
+
+  * Risk: Excessive initial features delaying launch.
+  * Mitigation: Strict adherence to defined MVP requirements; clearly separate enhancements into future phases.
+
+* **Resource Constraints:**
+
+  * Risk: Limited developer time or technical resources.
+  * Mitigation: Employing AI-driven tools (Cursor IDE, MCP Task Manager) to automate and streamline repetitive coding and project management tasks.
+
+# Appendix
+
+## Research Findings:
+
+* Astro JS performance advantages significantly benefit conversion-focused landing pages.
+* Prismic provides a balance between usability and flexibility ideal for small teams with growth plans.
+
+## Technical Specifications:
+
+* Astro JS v3.x (latest)
+* Prismic CMS (Free tier initially)
+* Mailerlite for email automation
+* Netlify static hosting for scalability and ease of deployment
+</PRD>
